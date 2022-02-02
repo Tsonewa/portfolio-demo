@@ -1,0 +1,62 @@
+/* Aside sticky navbar*/
+
+.contacts-sticky-nav {
+    position: fixed;
+    top: 86%;
+    transform: translateY(-50%);
+    right: 0px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    transition: width .3s;
+    width: 38px;
+    z-index: 99;
+    will-change: width;
+}
+
+.contacts-sticky-nav:hover {
+    width: 250px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.contacts-sticky-nav > ul {
+    float: right;
+    width: 250px;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.contacts-sticky-nav > ul > li {
+    text-align: right;
+    line-height: 30px;
+}
+
+.contacts-sticky-nav > ul > li > a:hover {
+    color: #D90913;
+}
+
+.contacts-sticky-nav > ul > li > a > span {
+    background: #D90913;
+}
+
+.contacts-sticky-nav > ul > li > a {
+    color: white;
+    transition: color .2s;
+}
+
+.text {
+    display: inline-block;
+    font-size: 13px;
+    transition: opacity .2s;
+    margin-right: 20px;
+}
+
+.contacts-sticky-nav > ul > li > a > span  {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+    transition: all .2s;
+}

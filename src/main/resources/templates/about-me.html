@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/fragment :: head"></head>
+
+<body>
+<header th:replace="/fragments/fragment :: nav"></header>
+<main>
+    <div th:replace="/fragments/fragment :: ribbon"></div>
+    <section class="about-me-info-wrapper">
+        <div class="charts-container">
+            <div class="chart" data-percent="80">HTML</div>
+            <div class="chart" data-percent="80">CSS</div>
+            <div class="chart" data-percent="70">JS</div>
+            <div class="chart" data-percent="90">MySQL</div>
+            <div class="chart" data-percent="90">Java</div>
+            <div class="chart" data-percent="50">TS</div>
+        <div class="chart" data-percent="80">Spring</div>
+        <div class="chart" data-percent="60">Docker</div>
+        <div class="chart" data-percent="80">JUnit</div>
+        <div class="chart" data-percent="90">Scrum</div>
+        <div class="chart" data-percent="50">Angular</div>
+            <div class="chart" data-percent="30">AWS</div>
+        </div>
+        <p>Since 2019 I've studied software development and gained knowledge in wide spectrum of programming technologies.
+            I enjoy challenging myself, troubleshooting issues, and finding solutions. I'm naturally curious, highly organized, and
+            perpetually working on improving myself.</p>
+    </section>
+</main>
+
+<footer th:replace="/fragments/fragment :: footer"></footer>
+
+<script src="/js/navbar.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.chart').easyPieChart({
+            scaleColor: false,
+            lineWidth: 10,
+            lineCap: 'round',
+            barColor: '#333',
+            size: 90,
+            animate: 1500
+        });
+    });
+</script>
+
+</body>
+</html>

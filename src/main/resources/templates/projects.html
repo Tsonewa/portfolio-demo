@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/fragment :: head"></head>
+
+<header th:replace="/fragments/fragment :: nav"></header>
+
+<body>
+<section id="projects">
+    <h1 class="title">
+        <span class="blink">[&nbsp; </span>
+        &nbsp;Start-up projects&nbsp;
+        <span class="blink"> &nbsp;]</span>
+    </h1>
+
+    <ul id="projects-list">
+        <li>
+            <div>
+                <img src="./assets/to-do.png" alt=""/>
+                <h1>Java | JavaScript | HTML | CSS | MySQL | Spring</h1>
+                <p><a>Take a look</a></p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="./assets/Screenshot_4.png" alt="netflix"/>
+                <h1>HTML | CSS</h1>
+                <p><a>Take a look</a></p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="./assets/Screenshot_2.png" alt="beats"/>
+                <h1>JavaScript | TypeScript | Angular | HTML | CSS</h1>
+                <p><a>Take a look</a></p>
+            </div>
+        </li>
+    </ul>
+</section>
+</body>
+
+
+<footer th:replace="/fragments/fragment :: footer"></footer>
+
+<script src="/js/navbar.js"></script>
+
+</body>
+</html>

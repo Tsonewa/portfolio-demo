@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<header th:fragment="nav">
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/education}">Education</a></li>
+                <li><a th:href="@{/projects}">Projects</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <aside class="contacts-sticky-nav">
+        <ul>
+            <li><a href="www.linkedin.com/in/dtsoneva"><div class="text">linked.in/dtsoneva</div><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><div class="text">github.com/Tsonewa</div><i class="fab fa-github-square"></i></a></li>
+            <li><a href="#"><div class="text">facebook.com/didka.tsonewaa</div><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><div class="text">instagram.com/tsonewa</div><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="#"><div class="text">reddit.com.tsonewa</div><i class="fab fa-reddit-square"></i></a></li>
+        </ul>
+    </aside>
+</header>
+
+
+<section th:fragment="intoduction" id="introduction">
+    <div class="titles-wrapper">
+        <h1 class="fullname-title">Hi there, I'm <span class="typed-text"></span><span class="cursor typing">&NonBreakingSpace;</span></h1>
+        <p class="description"><span class="typing-job-title"></span><span class="cursor typing">&NonBreakingSpace;</span></p>
+        <button class="btn"><a th:href="@{/contact}">Reach out to me</a></button>
+    </div>
+</section>
+
+<div th:fragment="ribbon" class="box">
+    <div class="ribbon ribbon-top-right"><a href="/assets/ResumeDT.pdf" download="resume">Resume</a></div>
+</div>
+
+<footer th:fragment="footer">
+    <p>Footer is here</p>
+</footer>

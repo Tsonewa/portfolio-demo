@@ -1,0 +1,27 @@
+/* Typing CSS */
+
+.typed-text{
+    font-weight: normal;
+    font-size: 30px;
+    color: #D90913;
+}
+
+.cursor{
+    display: inline-block;
+    width: 2px;
+    background-color: azure;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing{
+    animation: none;
+}
+
+@keyframes blink{
+    0% { background-color: azure;}
+    49% { background-color: azure;}
+    50% { background-color: transparent;}
+    99% { background-color: transparent;}
+    100% { background-color: azure; }
+}

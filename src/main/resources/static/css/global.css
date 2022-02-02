@@ -1,0 +1,187 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Euphoria+Script&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comfortaa&family=Euphoria+Script&family=Inconsolata:wght@300&family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.home-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: 70%;
+    place-self: center;
+    margin-top: 100px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    align-self: center;
+    color: white;
+    margin-left: 40px;
+}
+
+#education-main{
+    display: flex;
+    flex-direction: row;
+}
+
+#introduction{
+    margin: auto;
+}
+
+
+#about-me > h1 {
+    color: wheat;
+    margin: 60px 0px;
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+section{
+    width: 100%;
+}
+
+.fullname-title{
+    font-size: 26px;
+    color: white;
+}
+.picture-wrapper{
+    width: 50%;
+}
+
+.picture-wrapper > img {
+   width: 100vh;
+}
+
+.btn{
+    background: #D90913;
+    border: 1px white;
+    color: white;
+    margin-top: 40px;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn > a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    cursor:  pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 540px){
+
+    .home-wrapper{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .titles-wrapper{
+        width: 90%;
+        text-align: center;
+    }
+
+    .picture-wrapper{
+        width: 100%;
+    }
+
+    .picture-wrapper > img {
+        width: 92%;
+    }
+
+    .contacts-sticky-nav {
+        display: none;
+    }
+
+    .ribbon-top-right{
+        right: 0px;
+    }
+
+    .typed-text{
+        font-size: 25px;
+    }
+
+    .links-wrapper-responsive{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        place-content: center;
+    }
+
+    .links-wrapper-responsive ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .links-wrapper-responsive ul li {
+        background: rgba(255,255,255,0.1);
+        opacity: 0.6;
+        padding: 10px;
+        border-radius: 25px;
+        list-style: none;
+       margin: 5px;
+    }
+
+    .links-wrapper-responsive ul li a {
+        color: white;
+    }
+}
+
+@media only screen and (min-device-width: 541px) and (max-device-width: 612px){
+
+    .home-wrapper{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .titles-wrapper{
+        width: 90%;
+        text-align: center;
+    }
+
+    .picture-wrapper{
+        width: 100%;
+    }
+
+    .picture-wrapper > img {
+        width: 92%;
+    }
+
+    .ribbon-top-right{
+        right: 0px;
+    }
+
+    .typed-text{
+        font-size: 25px;
+    }
+
+    .links-wrapper-responsive{
+        display: none;
+    }
+}
